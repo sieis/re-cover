@@ -21,7 +21,7 @@ $ cd yoursitename
 $ git clone git@github.com:sieis/re-cover.git themes/recover
 ```
 
-2. Copy contents of exampleSite folder into ```yoursitename``` directory
+2. Copy contents of /themes/exampleSite into ```yoursitename``` root directory.
 
 ```
  $ hugo server -D
