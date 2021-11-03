@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="container col-xxl-10 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{.Site.Params.groupImage}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+    <div class="col-lg-6">
+      <h1 class="display-3 fw-bold lh-1 mb-3">{{.Site.Params.meeting}}</h1>
+      <p class="fs-3 text-muted">
+        {{.Site.Params.type}}<br>
+          <a href="" rel="noopener" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fas fa-map-marker"></i> {{.Site.Params.location}}</a>
+          <br>
+        </p>
+        <p>
+          {{.Site.Params.time}}<br>
+          {{.Site.Params.altTime}}<br>
+        </p>
+        <p>
+          {{ if .Site.Params.zoom }}
+          <a href="{{.Site.Params.zoom}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-video"></i> {{.Site.Params.zoomtime}}</a>
+          {{ end }}
+          {{ if .Site.Params.altzoom }}
+          <a href="{{.Site.Params.altzoom}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-video"></i> {{.Site.Params.altzoomtime}}</a>
+          {{ end }}
+        </p>
+        <hr>
+    </div>
+  </div>
+</div>
+{{- partial "greeting.html" .}}
+{{- partial "preamble.html" .}}
+{{- partial "guidelines.html" .}}
+{{- partial "announcements.html" .}}
+{{- partial "readings.html" .}}
+{{- partial "topic.html" .}}
+{{- partial "end.html" .}}
+
+{{ end }}

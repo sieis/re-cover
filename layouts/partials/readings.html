@@ -1,0 +1,39 @@
+<!-- ========================= GUIDELINES ========================= -->
+<section id="guidelines" class="container">
+    <hr class="">
+    <div class="row py-5">
+        <div class="col-md-5">
+            <img class="py-5 img-fluid my-auto" role="img" src="{{ .Site.Params.guidelinesimage }}" width="500" height="500" alt="graphic of man reading a list">
+        </div>
+        <div class="col-md-7">
+            <h2 class="display-4 fw-bold">Regular Readings</h2>
+            <p class="lead mb-5">For reading before and/or during meetings:</p>
+                {{ with .Site.GetPage "/readings" }}
+                {{ range .Pages}}
+                <!-- =============Button triggers for modal============= -->
+                <button type="button" class="mb-3 btn btn-outline-secondary btn-sm px-4" data-bs-toggle="modal" data-bs-target="#{{.Params.modal}}">
+                    <i class="far fa-hand-point-right"></i> {{.Title}}
+                </button>
+        
+                <!-- ============= Modals ============= -->
+                <div class="modal fade" id="{{.Params.modal}}" tabindex="-1" aria-labelledby="{{.Params.modal}}Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="{{.Params.modal}}Label">{{.Title}} {{.Params.from}}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            {{.Content}}
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{end}}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body class="container-fluid">
+        {{- partial "header.html" . -}}
+        <div id="content" class="container">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

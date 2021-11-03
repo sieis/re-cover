@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <h2 class="display-2 fw-bold">
+        {{ .Title }}
+    </h2>
+        {{ .Content}}
+    <a href="/readings" class="">back to readings</a>
+    <div>
+        {{ with .PrevInSection }}
+          <a class="" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
+{{ end }}
+

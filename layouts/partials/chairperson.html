@@ -1,0 +1,18 @@
+<!-- ========================= GUIDELINES ========================= -->
+<section id="chairperson" class="container">
+    <hr class="">
+    <h2 class="display-4 fw-bold">Chairperson Guidelines</h2>
+            <p class="lead">{{.Site.Params.chairguidelines}}</p>
+            <p></p>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        {{range .Site.Data.guidelines }}
+        <div class="col">
+            <div class="bg-beagle bg-gradient">
+                <svg class=""height="1em" width="1em"></svg>
+            </div>
+            <h2 class="display-6">{{.title}}</h2>
+            <p>{{ .text }}</p>
+        </div>
+        {{end}}
+    </div>
+</section>
