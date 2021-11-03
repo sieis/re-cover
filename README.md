@@ -29,7 +29,7 @@ $ git clone git@github.com:sieis/re-cover.git themes/recover
 
 ## 12 Step Groups
 
-A Demo Site may be found **[here](https://)**
+A Demo Site may be found **[here](https://re-cover-hugo-demo.netlify.app/)**
 
 The example site included in the template is based upon The Beagle Pack's web page project, and the inception of this theme was brought about after having built similar sites for different groups.
 
