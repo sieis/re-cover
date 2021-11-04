@@ -42,7 +42,7 @@ theme = 'recover'
     url = "/about"
     weight = 1
  [[menu.main]]
-    name = "Venmo @ Group Name"
+    name = "Donations"
     url = "https://venmo.com/"
     weight = 2
     
