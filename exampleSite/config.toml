@@ -14,6 +14,8 @@ theme = 'recover'
     address = "123 Main Street, City, ST 77995"
     googlemap = "https://www.google.com/maps"
     groupImage = "/images/group.svg"
+    # google analytics tag
+    gtag = ""
     time = "12p Mondays - Fridays"
     altTime = "10am Saturdays"
     zoom = "https://zoom.us/"
