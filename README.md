@@ -9,7 +9,7 @@ This is meant to address the more common web needs of a group. Namely, a clean, 
 1. Access any online only meeting resources.
 1. Contribute donations to the group easily online.
 
-![template screenshot](./images/screenshot.png)
+![template screenshot](https://raw.githubusercontent.com/sieis/re-cover/main/images/screenshot.png)
 
 ## Installation & Usage
 
