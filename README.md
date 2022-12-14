@@ -1,4 +1,4 @@
-# :excitement: re-cover | Hugo theme for recovery groups
+# :boom: re-cover | Hugo theme for recovery groups
 
 Live Demo: **[here](https://re-cover-hugo-demo.netlify.app/)**
 
